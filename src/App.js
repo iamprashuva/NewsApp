@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar';
 
 class App extends Component {
-  pageSize = 15;
   apiKey = process.env.REACT_APP_NEWS_API;
+  pageSize = 15;
   state={
     progress: 0
   }
