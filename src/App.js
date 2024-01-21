@@ -22,6 +22,12 @@ class App extends Component {
       />
         <Navbar />
         <Routes>
+        <Route
+            exact
+            path="/"
+            element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="general" pageSize={this.pageSize} country="us" category="general"
+             />}
+          />
           <Route
             exact
             path="/general"
